@@ -7,18 +7,38 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --white: #FFF;
+  --white: #FFFFFF;
   --black: #000;
+  --gray1: #09090A; //background  
+  --gray2: #121214; //eleements
+  --gray3: #222222; //bars
+  --gray4: #323238; //divider/stroke
+  --gray5: #E1E1E6; //title
+  --gray6: #C4C4CC; //text
+  --gray7: #8D8D99; //text apoio
+  --green-dark: #015F43;
+  --green: #00875F;
+  --green-light: #00B37E;
+  --blue-dark: #06067e;
+  --blue-light: #0808d8;
+  --blue: #81D8F7;
+  --warning: #FBA94C;
+  --red-error: #F75A68;
+
+  --bg-header: #3405dd;
+
+
   --background: #FFF;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --white: #000;
-    --black: #FFF;
-    --background: #000;
-  }
-}
+// @media (prefers-color-scheme: light) {
+//   :root {
+//     --white: #000;
+//     --black: #FFF;
+//     --background: #000;
+//     --bg-header: rgb(2, 44, 28);
+//   }
+// }
 
 html,
 body {
@@ -26,11 +46,11 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  color: var(--white);
-}
-
-body, input, textarea, select, button {
+body,
+input,
+textarea,
+select,
+button {
   font: 400 1rem 'poppins', sans-serif;
 }
 
@@ -39,14 +59,8 @@ a {
   text-decoration: none;
 }
 
-botton{
+button {
   cursor: pointer;
-}
-
-@media (prefers-color-scheme: light) {
-  html {
-    color-scheme: dark;
-  }
 }
 
 @media (max-width: 1080px) {

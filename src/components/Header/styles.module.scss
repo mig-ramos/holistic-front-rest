@@ -1,0 +1,128 @@
+.headerContainer {
+    height: 6rem;
+    border-bottom: 1px solid #DDD;
+    background: var(--bg-header);
+}
+
+.headerContent {
+    max-width: 1120px;
+    height: 6rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    display: flex;
+    align-items: center;
+
+    img {
+        cursor: pointer;
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        margin-left: 5rem;
+        height: 6rem;
+    }
+
+    a {
+        display: inline-block;
+        position: relative;
+        padding: 0 0.5rem;
+        color: var(--gray6);
+        transition: color 0.2s;
+
+        &+a {
+            margin-left: 2rem;
+        }
+
+        &:hover {
+            color: var(--white);
+        }
+
+        & .active {
+            color: chocolate;
+            font-weight: bold;
+        }
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        height: 3rem;
+        border-radius: 1.5rem;
+        background: var(--blue-dark);
+        color: var(--white);
+        border: 0;
+        padding: 0 1.5rem;
+        font-weight: bold;
+        transition: color 0.2s;
+
+        &:hover {
+            background: var(--blue-light);
+            border: 1px solid var(--white);
+        }
+    }
+
+}
+
+@media (max-width: 970px) {
+    .headerContainer {
+        height: 11rem;
+        padding: 0.5rem 0;
+    }
+
+    .headerContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        nav {
+            margin-left: 0;
+        }
+
+        button {
+            padding: 1.5rem;
+            margin: 1rem auto;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .headerContainer {
+        height: 17rem;
+        padding: 0.5rem 0;
+    }
+
+    .headerContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0.2rem auto;
+        }
+
+        a {
+            padding: 0.1rem 0;
+
+
+
+            &+a {
+                margin-left: 0;
+            }
+
+        }
+
+        button {
+            padding: 1.5rem;
+            margin: 1.5rem auto;
+        }
+    }
+}
