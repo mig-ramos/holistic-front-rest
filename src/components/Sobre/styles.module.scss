@@ -1,0 +1,17 @@
+.sobreContainer {
+    border-top: 1px solid #DDD;
+}
+
+.sobreContent {
+    max-width: 1120px;
+    height: 3rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        color: var(--gray7);
+    }
+}

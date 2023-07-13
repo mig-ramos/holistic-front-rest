@@ -1,0 +1,27 @@
+.hero {
+    max-width: 1120px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.titulo {
+    padding: 1rem;
+
+    h1 {
+        color: var(--blue-dark);
+    }
+
+    p {
+        margin-top: 1rem;
+        line-height: 2rem;
+    }
+}
+
+.img {
+    width: 50%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 12px;
+}

@@ -10,6 +10,7 @@ export default function Document() {
           rel="stylesheet"
         />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <body>
         <Main />
