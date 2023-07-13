@@ -17,7 +17,7 @@ export default function Home() {
       <main className={styles.main}>
         <Hero titulo='Terapia Holística a um click!' subTitulo='A Terapia Holística é um conjunto de terapias que visam a promoção a saúde, a prevenção de doenças e agravos, alívio de sintomas e cura, através do cuidado integral do ser humano. Seus componentes, em sua maioria, têm berço na medicina oriental e trazem consigo uma mistura entre o conhecimento prático e científico.' />
 
-        <Sobre />
+        <Sobre titulo='Sobre Mim' subTitulo='Terapeuta Holístico desde 2010, utilizando a energia cósmica a serviço de todos aqueles que acreditam em Deus, na energia divina que tudo é!'/>
       </main>
     </>
   )
