@@ -9,12 +9,12 @@ type HeroProps = {
 
 export function Hero(props: HeroProps) {
   return (
-    <div className={styles.hero}>
+    <section className={styles.hero}>
       <div className={styles.titulo}>
       <h1>{props.titulo}</h1>
       <p>{props.subTitulo}</p>
       </div>     
         <Image src={imgHero} alt="Imagem Hero" className={styles.img} />   
-    </div>
+    </section>
   );
 }

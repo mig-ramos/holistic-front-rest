@@ -5,6 +5,7 @@ import { Sobre } from '@/components/Sobre'
 import { Hero } from '@/components/hero'
 import { Terapias } from '@/components/Terapias'
 import { Agendar } from '@/components/Agendar'
+import { Contato } from '@/components/Contato'
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -30,6 +31,10 @@ export default function Home() {
         <hr />
 
         <Agendar titulo='Escolha seu horário para atendimento' subTitulo='Você irá para sua área de Cliente Especial!' />
+
+        <hr />
+
+        <Contato />
         
       </main>
     </>

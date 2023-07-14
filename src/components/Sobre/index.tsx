@@ -9,12 +9,12 @@ type SobreProps = {
 
 export function Sobre(props: SobreProps) {
   return (
-    <div className={styles.sobre}>
+    <section className={styles.sobre}>
       <Image src={imgSobre} alt="Imagem Hero" className={styles.img} />  
       <div className={styles.titulo}>
       <h1>{props.titulo}</h1>
       <p>{props.subTitulo}</p>
       </div>      
-    </div>
+    </section>
   );
 }
